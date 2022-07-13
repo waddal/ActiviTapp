@@ -37,18 +37,20 @@ code {
 .App {
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   width: 100vw;
   text-align: center;
+  padding-top: 5%;
+  box-sizing: border-box;
 }
 
 .activityContainer {
+  flex: 1;
   position: relative;
-  margin-bottom: 24%;
   height: clamp(186px, 196px, 202px);
   width: clamp(320px, 70%, 500px);
+  padding-top: 10%;
 }
 
 .activityCard {
@@ -129,6 +131,7 @@ h3 {
 }
 
 .favoritesContainer {
+  flex: 1;
   position: relative;
   width: 100vw;
 }
@@ -139,21 +142,15 @@ h3 {
   display: grid;
   align-items: flex-start;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
+  padding: 2%;
   box-sizing: border-box;
-}
-
-@media (max-width: 500px) {
-  .favoritesList {
-    grid-template-columns: 1fr;
-  }
 }
 
 .favoritesListItem {
   position: relative;
-  padding: 8px;
+  padding: 2%;
   border-radius: 10px;
-  margin: 8px;
+  margin: 2%;
   border: 1px solid green;
 }
 
@@ -185,4 +182,10 @@ h3 {
 
 .peeps {
   font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .favoritesList {
+    grid-template-columns: 1fr;
+  }
 }
