@@ -40,7 +40,7 @@ const Activity = ({
     <>
       {!isFetching && (
         <div className="activityContainer">
-          <div className="activityCard" onPointerDown={() => handleClick()}>
+          <div data-testid="activityCard" className="activityCard" onPointerDown={() => handleClick()}>
             {!activity.activity && (
               <div className="activityItem">
                 <h3>Tap</h3> <span>for an activity!</span>

@@ -6,15 +6,20 @@ const Tabs = ({ handleAddFavorite, handleFavsModule }) => {
   return (
     <>
       <div
+        data-testid="favTab"
         className="tab favoriteButton"
         onPointerDown={() => handleAddFavorite()}
       >
         <Emoji symbol={"⭐️"} label={"favorite"} />
       </div>
-      <div className="tab listButton" onPointerDown={() => handleFavsModule()}>
+      <div
+        data-testid="listTab"
+        className="tab listButton"
+        onPointerDown={() => handleFavsModule()}
+      >
         <Emoji symbol={"📖"} label={"list"} />
       </div>
-      <div className="tab socialButton">
+      <div data-testid="socialTab" className="tab socialButton">
         <a href="https://www.github.com/waddal" alt="❤️" className="social">
           <Emoji symbol={"❤️"} label={"social"} />
         </a>
