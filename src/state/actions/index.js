@@ -3,7 +3,7 @@
 // Mixed Content: The page at 'https://activitapp.herokuapp.com/' was loaded over HTTPS,
 // but requested an insecure XMLHttpRequest endpoint 'http://www.boredapi.com/api/activity/'.
 // This request has been blocked; the content must be served over HTTPS... AAUGH.. so, a workaround..
-import activities from "../data/index";
+import activities from "../../data/index";
 
 export const FETCH_START = "FETCH_START";
 export const FETCH_SUCCESS = "FETCH_SUCCESS";

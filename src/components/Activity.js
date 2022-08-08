@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 
-import { getActivity } from "./../actions";
+import { getActivity } from "../state/actions";
 import Emoji from "./Emoji";
 import Tabs from "./Tabs";
 

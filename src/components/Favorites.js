@@ -12,7 +12,7 @@ const Favorites = ({ favs, handleRemoveFavorite }) => {
   };
 
   return (
-    <div className="favoritesContainer">
+    <div data-testid="favoritesContainer" className="favoritesContainer">
       <div className="favoritesList">
         {favs
           .filter((item) => item)

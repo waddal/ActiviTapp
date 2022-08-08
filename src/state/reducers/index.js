@@ -1,6 +1,6 @@
-import { FETCH_START } from "./../actions";
-import { FETCH_SUCCESS } from "./../actions";
-import { FETCH_FAIL } from "./../actions";
+import { FETCH_START } from "../actions";
+import { FETCH_SUCCESS } from "../actions";
+import { FETCH_FAIL } from "../actions";
 
 export const initialState = {
   activity: {
