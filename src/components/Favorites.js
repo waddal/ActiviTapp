@@ -23,9 +23,10 @@ const Favorites = ({ favs, handleRemoveFavorite }) => {
                 className={`favoritesListItem ${getClassName(index)}`}
                 onPointerDown={() => markSelectedId(index)}
               >
-                <p>{activity}</p>
+                <p data-testid="favoriteItem">{activity}</p>
                 {selected === index && (
                   <div
+                    data-testid="deleteButton"
                     className="tab actionButton"
                     onPointerDown={() => handleRemoveFavorite(index)}
                   ></div>
